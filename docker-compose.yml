@@ -1,0 +1,14 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      BOOKS_CSV: /app/book1-100k.csv
+      DATA_PATH: /app/data/state.json
+    volumes:
+      - recommendation_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  recommendation_data:
