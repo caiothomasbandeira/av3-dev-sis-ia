@@ -1,6 +1,20 @@
 # Sistema de Recomendação de Livros
 
+![Python 3.11](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-API-009688?logo=fastapi&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Container-2496ED?logo=docker&logoColor=white)
+![Pytest](https://img.shields.io/badge/Tests-pytest-0A9EDC?logo=pytest&logoColor=white)
+![Dataset Goodreads](https://img.shields.io/badge/Dataset-Goodreads-553B08)
+
 API em Python/FastAPI para recomendar livros do conjunto de dados `book1-100k.csv` do Goodreads. O projeto também inclui Docker, testes unitários e de integração e documentação Swagger.
+
+## Equipe e contribuições
+
+| Integrante | Responsabilidades |
+|---|---|
+| **Caio Thomas Bandeiras** | Configuração do Docker Compose e do Dockerfile; documentação do README e regras do `.gitignore`; pesquisa e inclusão do conjunto de dados no repositório. |
+| **Luis Vinicius Hernani** | Implementação da aplicação na pasta `app/` e configuração das dependências em `requirements.txt`. |
+| **Joao Victor Souza** | Testes na pasta `tests/` e scripts de execução na pasta `scripts/`. |
 
 ## Modelo
 
@@ -18,7 +32,7 @@ As notas válidas ficam entre `0` e `5`. Ao recomendar, livros já avaliados pel
 - `app/recommender.py`: carga dos dados, persistência e algoritmo de recomendação.
 - `tests/`: testes unitários e de integração.
 - `scripts/`: scripts opcionais para instalar as dependências e iniciar a API localmente.
-- `book1-100k.csv`: base de dados utilizada.
+- `book1-100k.csv`: base de dados utilizada, obtida no [Kaggle — Goodreads Book Datasets (10M)](https://www.kaggle.com/datasets/bahramjannesarr/goodreads-book-datasets-10m).
 - `Dockerfile` e `docker-compose.yml`: execução em contêiner.
 
 ## Execução local
